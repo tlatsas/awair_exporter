@@ -13,8 +13,6 @@ module AwairExporter
     use Prometheus::Middleware::Exporter
 
     get "/" do
-      puts settings.inspect
-
       body = <<~HTML
         <!DOCTYPE html>
         <html lang="en">
